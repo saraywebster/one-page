@@ -255,15 +255,19 @@ header {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(6, 6rem);
-  row-gap: 5rem;
+  row-gap: 6rem;
 }
-.knowledge {
-  text-align: center;
+.knowledge.left {
+  text-align: left;
+}
+.knowledge.right {
+  text-align: right;
 }
 .knowledge-header {
   align-items: center;
   color: #4b4b4b;
 }
+
 .knowledge-header i {
   font-size: 3rem;
 }
@@ -271,6 +275,11 @@ header {
   font-family: var(--font-pattern);
   font-size: 2rem;
   padding-left: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+.knowledge-header h3,
+p {
+  display: inline;
 }
 .knowledge:nth-child(1) {
   grid-column: 4 / 7;
