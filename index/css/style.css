@@ -329,6 +329,8 @@ p {
   height: 30rem;
   position: relative;
   padding: 0.4rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1.5rem;
 }
 .card-img-wrapper {
   width: 100%;
@@ -371,14 +373,13 @@ p {
   text-align: center;
   padding: 1rem;
 }
-.card-info button {
+.card-info.bottom button {
   margin: auto;
   display: block;
   width: 8rem;
   height: 2.5rem;
   font-family: var(--font-reading);
   font-size: 1rem;
-  color: white;
   text-transform: uppercase;
   background: #00b4db; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -389,7 +390,7 @@ p {
   background: linear-gradient(to right, #0083b0, #00b4db); /* W3C, IE 1;*/
   border: none;
   border-radius: 1rem;
-  box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 .card-info.top {
   position: absolute;
@@ -402,9 +403,13 @@ p {
   bottom: 2rem;
   left: 0;
 }
+.card-info.bottom a:link,
+a:hover a:active,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
 .cards:hover {
   background-color: white;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-  border-radius: 1.5rem;
   transition: 0.1s;
 }
