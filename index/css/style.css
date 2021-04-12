@@ -413,3 +413,99 @@ a:visited {
   background-color: white;
   transition: 0.1s;
 }
+.contacts-session {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #4b4b4b;
+}
+.contacts-wrapper {
+  width: 80%;
+  height: 65%;
+  display: flex;
+  margin: auto;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+.contacts-left {
+  width: 35%;
+  height: 100%;
+  background-image: url(/global-files/image/e-mail.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 3rem;
+}
+.contacts-right {
+  color: #4b4b4b;
+  width: 40%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0.5rem #0083b0;
+  border-radius: 1rem;
+  background: white;
+}
+.contacts-right h3 {
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: var(--font-pattern);
+  color: #4b4b4b;
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: 0.2rem;
+  margin: 1rem auto;
+  color: #0083b0;
+}
+.contacts-right form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-group {
+  position: relative;
+}
+.field {
+  font-size: 1rem;
+  font-family: var(--font-reading);
+  background: transparent;
+  width: 20rem;
+  height: 1rem;
+  border: none;
+  border-bottom: 2px dashed #0083b0;
+  margin: 2rem 0;
+  outline: none;
+}
+.input-group #name {
+  text-transform: capitalize;
+}
+.input-group #e-mail {
+  text-transform: lowercase;
+}
+.input-group textarea {
+  min-width: 10rem;
+  max-width: 20rem;
+  max-height: 3rem;
+  overflow-y: visible;
+}
+.field-label {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  font-family: var(--font-reading);
+  text-transform: capitalize;
+}
+.field:focus ~ label {
+  top: 0;
+}
+.field:focus {
+  border-bottom: 2px solid #0083b0;
+}
