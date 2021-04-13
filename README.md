@@ -1,6 +1,3 @@
-# project-front-end
-
-This work is the replica of the web learning project offered by the channel "João Carlos Lima e Silva" on youtube.
 
 ## tasks
 
