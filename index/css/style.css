@@ -403,7 +403,7 @@ p {
   bottom: 2rem;
   left: 0;
 }
-.card-info.bottom a:link,
+* a:link,
 a:hover a:active,
 a:visited {
   text-decoration: none;
@@ -508,4 +508,24 @@ a:visited {
 }
 .field:focus {
   border-bottom: 2px solid #0083b0;
+}
+.button-submit {
+  margin: auto;
+  display: block;
+  width: 8rem;
+  height: 2.5rem;
+  font-family: var(--font-reading);
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+  background: #00b4db; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0083b0,
+    #00b4db
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083b0, #00b4db); /* W3C, IE 1;*/
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
