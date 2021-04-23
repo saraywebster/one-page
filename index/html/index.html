@@ -242,24 +242,30 @@
             <div class="budget-wrapper">
                 <h1>Faça um Orçamento</h1>
                 <form>
-                    <label for="amount">Quantidade de páginas</label>
-                    <input type="number" min="1" name="amount" id="amount">
-                    <label for="js">Preciso de um script JS</label>
-                    <input type="checkbox" name="js" id="js">
-                    <label>Layout</label>
-                    <div class="group-layout">
-                        <div>
+                    <div class="layout-budget">
+                        <label for="amount">Quantidade de páginas</label>
+                        <input type="number" min="1" name="amount" id="amount">
+                    </div>
+                    <div class="layout-budget">
+                        <input type="checkbox" name="js" id="js">
+                        <label for="js">Preciso de um script JS</label>
+                    </div>
+                    <div class="layout-budget">
+                        <label>Layout</label>
+                        <div class="input-label">
                             <input type="radio" name="layout" id="layout-yes">
-                            <label for="layout-yes">Preciso de uma layout</label>
+                            <label for="layout-yes">Preciso de um layout</label>
                         </div>
                         <div>
                             <input type="radio" name="layout" id="layout-no">
                             <label for="layout-no">Já tenho um layout</label>
                         </div>
+                    </div>
+                    <div class="layout-budget">
                         <label for="prompt">Prazo</label>
                         <input type="range" name="prompt" id="prompt">
-                        <button class="button-submit" type="submit">Enviar</button>
                     </div>
+                    <button class="button-submit" type="submit">Enviar</button>
                 </form>
             </div>
             <div class="budget-img">

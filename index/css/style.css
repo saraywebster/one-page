@@ -494,7 +494,8 @@ a:visited {
   min-width: 10rem;
   max-width: 20rem;
   max-height: 3rem;
-  overflow-y: visible;
+  overflow-y: auto;
+  resize: none;
 }
 .field-label {
   position: absolute;
@@ -542,8 +543,6 @@ a:visited {
   left: 5%;
   top: 25%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #f2f2f2;
   border-radius: 10px;
   box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.5);
@@ -551,7 +550,6 @@ a:visited {
 .budget-img {
   width: 40%;
   height: 100vh;
-  display: inline;
   position: absolute;
   right: 0;
   background-image: url(/global-files/image/budget-session.jpg);
@@ -562,7 +560,8 @@ a:visited {
 }
 .budget-wrapper h1 {
   position: absolute;
-  top: 1em;
+  left: 33%;
+  top: 1.5rem;
   color: #4b4b4b;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -571,13 +570,12 @@ a:visited {
   font-weight: bold;
 }
 .budget-wrapper form {
-  width: 90%;
+  width: 80%;
   margin: auto;
-  margin-top: 12%;
+  margin-top: 13%;
   display: grid;
-  grid-template-columns: auto 1fr;
-  column-gap: 5rem;
-  row-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 .budget-wrapper label {
   color: #4b4b4b;
@@ -585,16 +583,20 @@ a:visited {
   font-size: 1rem;
   font-weight: bold;
 }
-.budget-wrapper input[type="number"] {
-  font-family: var(--font-reading);
-  width: 3rem;
-  font-size: 2rem;
+.budget-wrapper input:focus {
   outline: none;
-  border-radius: 10rem;
-  border: 2px solid #4b4b4b;
-  overflow: none;
-  background-color: #f2f2f2;
 }
-.budget-wrapper input[type="number"]:hover {
-  border: 2px solid #0083b0;
+
+.button-submit {
+  grid-column: 2;
+  grid-row: 2;
+  cursor: pointer;
+}
+.layout-budget {
+  border-radius: 0.1rem;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+  padding: 0.5rem;
+}
+.layout-budget > label {
+  line-height: 1rem;
 }
