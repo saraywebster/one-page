@@ -597,6 +597,3 @@ a:visited {
   box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
   padding: 0.5rem;
 }
-.layout-budget > label {
-  line-height: 1rem;
-}
