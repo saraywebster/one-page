@@ -1,14 +1,5 @@
-# project-front-end
+# Projeto Front End
 
-This work is the replica of the web learning project offered by the channel "João Carlos Lima e Silva" on youtube.
+Esse projeto foi desenvolvido baseado em um curso em vídeo disponível no [Youtube](https://www.youtube.com/watch?v=L_JSUkn7LME&list=PLM_90--7SomWgfPYCXnpuoY2L-Z_Z-AiV&index=1&t=442s). No entanto foi feito algumas alterações tendo em vista a aplicação de conhecimentos vistos durante o curso.
 
-## tasks
-
-The control of the tasks of this project will be carried out on github
-
-## icons
-
-<p>:package: new functionality</p>
-<p>:up: update</p>
-<p>:bug: bug fix</p>
-<p>:rocket: release</p>
+O resultado parcial está disponível para visualização [aqui](https://60a584cce06bd40007c6335d--boring-engelbart-4caa62.netlify.app/)
